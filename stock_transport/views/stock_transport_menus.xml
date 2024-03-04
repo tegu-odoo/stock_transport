@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<odoo>
+    <menuitem id="stock_transport_root" name="Stock Transport">
+        <menuitem id="stock_transport_setting_menu" name="Settings">
+            <menuitem id="stock_transport_category_menu_action" action="fleet_vehicle_model_category_action"/>
+        </menuitem>
+    </menuitem>
+</odoo>

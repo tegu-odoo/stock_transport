@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="fleet_vehicle_model_category_list" model="ir.ui.view">
+        <field name="name">fleet.vehicle.model.category.tree</field>
+        <field name="model">fleet.vehicle.model.category</field>
+        <field name="inherit_id" ref="fleet.fleet_vehicle_model_category_view_tree"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='name']" position="after">
+                <field name="max_weight" />
+                <field name="max_volume" />
+            </xpath>
+        </field>
+    </record>
+
+    <record id="fleet_vehicle_model_category_action" model="ir.actions.act_window">
+        <field name="name">Categories</field>
+        <field name="res_model">fleet.vehicle.model.category</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+</odoo>
