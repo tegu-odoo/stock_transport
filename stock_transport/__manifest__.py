@@ -7,11 +7,10 @@
 
         'views/fleet_vehicle_model_category_views.xml',
         'views/stock_picking_batch_views.xml',
-        'views/stock_transport_menus.xml',
+        'views/stock_picking_views.xml',
     ],
 
     'installable': True,
-    'application': True,
     'auto_install': False,
     'license': 'LGPL-3',
 }
